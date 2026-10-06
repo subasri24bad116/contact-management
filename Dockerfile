@@ -8,4 +8,6 @@ RUN npm ci --only=production
 
 COPY src/ ./src/
 
-CMD ["node", "src/app.js"]
+EXPOSE 3000
+
+CMD ["npm", "start"]
